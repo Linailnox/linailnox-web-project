@@ -1,5 +1,5 @@
 body{
-    background-image:url(https://linailnox.github.io/images/background.png);
+    background-image:url(https://linailnox.github.io/images/background.jpg);
 }
 
 .header{
@@ -98,9 +98,13 @@ body{
     right: 20px;
 }   
 .main-up{
-    top: 100px;
+    min-height: 750px;
+    padding-top: 150px;
     box-sizing: border-box;
-    background: #b3d4fc;
+    /*
+    background-image: url(https://linailnox.github.io/images/background.jpg);
+    */
+    background-position: 0px 0px;
     text-shadow: none;
     position: relative;
     min-height: 1px;
@@ -112,10 +116,33 @@ body{
     color: #666;
     font-family: "Microsoft YaHei", Microsoft YaHei;
     font-weight: normal;
+    position: relative;
+    padding-bottom: 90px;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    display: block;
+    line-height: 2;
+    z-index: 1;
+    text-align: center;
+}
+.main-up-one{
+    /*background: rgba(63, 81, 181, 0.8);*/
+    box-sizing: border-box;
+    text-shadow: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    font-size: 13px;
+    line-height: 2;
+    color: #666;
+    font-family: "Microsoft YaHei", Microsoft YaHei;
+    font-weight: normal;
 }
 .main-up-word{
     box-sizing: border-box;
-    background: #b3d4fc;
     text-shadow: none;
     font-size: 30px;
     color: #fff;
@@ -126,4 +153,9 @@ body{
     margin: 0px;
     box-sizing: border-box;
     text-align: center;
+}
+.main-up-word-littl{
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: none;
 }
