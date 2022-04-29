@@ -1,5 +1,5 @@
 body{
-    background-image:url(https://linailnox.github.io/background.gif);
+    background-image:url(https://linailnox.github.io/images/background.gif);
 }
 
 .header{
@@ -23,7 +23,7 @@ body{
     right: 5px;
     bottom: 5px;
 
-    background-image:url(https://linailnox.github.io/favicon.ico);
+    background-image:url(https://linailnox.github.io/images/favicon.ico);
     background-size: 60px 60px;
     background-position:top left;
     border-radius:10px;
@@ -97,6 +97,33 @@ body{
     top: 25px;
     right: 20px;
 }   
-main{
-    background-color: white  ;
+.main-up{
+    top: 100px;
+    box-sizing: border-box;
+    background: #b3d4fc;
+    text-shadow: none;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 2;
+    color: #666;
+    font-family: "Microsoft YaHei", Microsoft YaHei;
+    font-weight: normal;
+}
+.main-up-word{
+    box-sizing: border-box;
+    background: #b3d4fc;
+    text-shadow: none;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.18;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
 }
