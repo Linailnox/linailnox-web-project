@@ -1,0 +1,76 @@
+.main-up{
+    min-height: 750px;
+    padding-top: 150px;
+    box-sizing: border-box;
+    background-image: url(https://linailnox.github.io/images/background.jpg);
+    background-position: 0px 0px;
+    text-shadow: none;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 2;
+    color: #666;
+    font-family: "Microsoft YaHei", Microsoft YaHei;
+    font-weight: normal;
+    position: relative;
+    padding-bottom: 90px;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    display: block;
+    line-height: 2;
+    z-index: 1;
+    text-align: center;
+}
+.main-up-one{
+    /*background: rgba(63, 81, 181, 0.8);*/
+    box-sizing: border-box;
+    text-shadow: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    font-size: 13px;
+    line-height: 2;
+    color: #666;
+    font-family: "Microsoft YaHei", Microsoft YaHei;
+    font-weight: normal;
+}
+.main-up-word{
+    box-sizing: border-box;
+    text-shadow: none;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.18;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.main-up-word-littl{
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: none;
+}
+.main-up-word-littl-button{
+    box-sizing: border-box;
+    position: relative; 
+    border-radius: 10px;
+    background-color: #b3d4fc;
+    text-decoration: none;
+    color: #fff;
+    padding: 13px 20px 12px;
+    font-size: 13px;
+    line-height: 1;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index: 1;
+}
