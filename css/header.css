@@ -93,3 +93,13 @@
     top: 25px;
     right: 20px;
 }
+.header-place{
+    position:fixed;
+    width: 10000px;
+    height: 70px;
+    z-index: 301;
+    background-color: white  ;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
