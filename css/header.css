@@ -95,6 +95,7 @@
 }
 .header-place{
     position:relative;
+    display: block;
     width: 10000px;
     height: 70px;
     z-index: 301;
