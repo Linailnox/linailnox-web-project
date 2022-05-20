@@ -100,7 +100,7 @@
     height: 70px;
     z-index: 301;
     background-color: white  ;
-    top: 0px;
-    left: 0px;
+    top: -8px;
+    left: -15px;
     right: 0px;
 }
