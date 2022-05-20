@@ -258,7 +258,7 @@ window.onkeydown = window.onkeyup = window.onkeypress = function () {
 } 
 
 setTimeout(ABC,2000)
-function ABC{
+function ABC(){
 //好吧，你的开发者工具是单独的窗口显示，不会改变原来网页的高度和宽度， 
 //但是你只要修改页面元素我就重新加载一次数据,让你无法修改页面元素
 if(window.addEventListener){  
