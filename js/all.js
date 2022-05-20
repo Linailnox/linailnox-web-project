@@ -254,8 +254,10 @@ window.onkeydown = window.onkeyup = window.onkeypress = function () {
     window.event.returnValue = false;  
     return false;  
 } 
-/*好吧，你的开发者工具是单独的窗口显示，不会改变原来网页的高度和宽度， 
-但是你只要修改页面元素我就重新加载一次数据,让你无法修改页面元素（不支持IE9以下浏览器） 
+
+setTimeout(3000)
+//好吧，你的开发者工具是单独的窗口显示，不会改变原来网页的高度和宽度， 
+//但是你只要修改页面元素我就重新加载一次数据,让你无法修改页面元素
 if(window.addEventListener){  
 window.addEventListener("DOMCharacterDataModified", function(){window.location.reload();}, true);  
 window.addEventListener("DOMAttributeNameChanged", function(){window.location.reload();}, true);  
@@ -267,4 +269,3 @@ window.addEventListener("DOMNodeRemoved", function(){window.location.reload();},
 window.addEventListener("DOMNodeRemovedFromDocument", function(){window.location.reload();}, true);  
 window.addEventListener("DOMSubtreeModified", function(){window.location.reload();}, true);  
 }  
-*/
