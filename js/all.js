@@ -4,6 +4,15 @@ document.onkeydown = function(){
         event.keyCode=0;
         event.returnValue=false;
     }
+    if(window.event && window.event.keyCode == 16) {
+        event.keyCode=0;
+        event.returnValue=false;
+    }
+    if(window.event && window.event.keyCode == 17) {
+        event.keyCode=0;
+        event.returnValue=false;
+    }
+    
     if(window.event && window.event.keyCode == 13) {
         window.event.keyCode = 505;
     }
