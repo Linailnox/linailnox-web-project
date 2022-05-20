@@ -1,12 +1,38 @@
-/这段js要放在页面最下方  
-var h = window.innerHeight,w=window.innerWidth;  
-//禁用右键 （防止右键查看源代码）  
+document.onkeydown = function(){
+
+    if(window.event && window.event.keyCode == 123) {
+        alert("F12被禁用");
+        event.keyCode=0;
+        event.returnValue=false;
+    }
+    if(window.event && window.event.keyCode == 13) {
+        window.event.keyCode = 505;
+    }
+    if(window.event && window.event.keyCode == 8) {
+        alert(str+"\n请使用Del键进行字符的删除操作！");
+        window.event.returnValue=false;
+    }
+//禁用右键 （防止右键查看源代码）
+}
+document.oncontextmenu = function (event){
+if(window.event){
+event = window.event;
+}try{
+var the = event.srcElement;
+if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+return false;
+}
+return true;
+}catch (e){
+return false;
+}
+}
 window.oncontextmenu=function(){return false;}  
-//在本网页的任何键盘敲击事件都是无效操作 （防止F12和shift+ctrl+i调起开发者工具）  
+/*/在本网页的任何键盘敲击事件都是无效操作 （防止F12和shift+ctrl+i调起开发者工具）  
 window.onkeydown = window.onkeyup = window.onkeypress = function () {  
     window.event.returnValue = false;  
     return false;  
-}  
+} */ 
 //如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面  
 window.onresize = function () {  
     if (h != window.innerHeight||w!=window.innerWidth){  
