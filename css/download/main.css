@@ -59,11 +59,6 @@ body{
     margin: 1% auto;
     text-shadow: none;
     padding-top: 150px;
-    background-image: url(https://linailnox.github.io/images/background.jpg);
-    background-position: 0px 0px;
-    background-attachment: fixed;
-    background-size: cover !important;
-    background-repeat: no-repeat;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
