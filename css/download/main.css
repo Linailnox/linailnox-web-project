@@ -89,3 +89,12 @@ a{
     margin-top: -11px;
     width: 290px;
 }
+.main-downloadnew{
+    position: absolute;
+    font-size: 14px;
+    margin: 8px 0 0 248px;
+    background: rgb(61,220,132);
+    color: white;
+    border-radius: 4px;
+    padding: 1px 8px 2px 8px;
+}
