@@ -1,12 +1,11 @@
 body{
     background-image:url(https://linailnox.github.io/images/background.jpg);
+    background-size:auto
 }
 .main-up{
     min-height: 750px;
     padding-top: 150px;
     box-sizing: border-box;
-    /*background-image: url(https://linailnox.github.io/images/background.jpg);
-    background-position: 0px 0px;*/
     text-shadow: none;
     position: relative;
     min-height: 1px;
@@ -20,9 +19,6 @@ body{
     font-weight: normal;
     position: relative;
     padding-bottom: 90px;
-    background-attachment: fixed;
-    background-size: cover !important;
-    background-repeat: no-repeat;
     display: block;
     line-height: 2;
     z-index: 1;
