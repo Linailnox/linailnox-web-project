@@ -109,3 +109,32 @@ body{
     height: 22%;
     margin: 6px -15px 0 6px;
 }
+.main-downloadhot{
+    cursor: pointer;
+    position: absolute;
+    font-size: 14px;
+    background: red;
+    margin: 8px 0 0 248px;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 8px 2px 8px;
+}
+.main-download001-name{
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: Bold;
+    margin-top: 12px;
+    color: #333333;
+    padding: 0 20px;
+}
+.main-download001-text{
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    margin-top: -11px;
+    width: 290px;
+}
