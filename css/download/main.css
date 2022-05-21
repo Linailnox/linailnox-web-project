@@ -1,31 +1,7 @@
 body{
     background-image:url(https://linailnox.github.io/images/background.jpg);
 }
-.main{
-    min-height: 750px;
-    padding-top: 150px;
-    box-sizing: border-box;
-    background-image: url(https://linailnox.github.io/images/background.jpg);
-    background-position: 0px 0px;
-    text-shadow: none;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    font-size: 13px;
-    line-height: 2;
-    font-weight: normal;
-    position: relative;
-    padding-bottom: 90px;
-    background-attachment: fixed;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    display: block;
-    line-height: 2;
-    z-index: 1;
-    text-align: center;
-}/*
+/*
 .main-up-one{
     background: rgba(63, 81, 181, 0.8);
     box-sizing: border-box;
@@ -82,6 +58,23 @@ body{
     max-width: 700px;
     margin: 1% auto;
     text-shadow: none;
+    padding-top: 150px;
+    background-image: url(https://linailnox.github.io/images/background.jpg);
+    background-position: 0px 0px;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    line-height: 2;
+    font-weight: normal;
+    position: relative;
+    padding-bottom: 90px;
+    display: block;
+    line-height: 2;
+    z-index: 1;
 }
 .main-downloadname{
     font-family: font2;
