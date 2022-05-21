@@ -101,3 +101,11 @@ body{
     transition-timing-function: ease;
     transition: 0.3s;
 }
+.main-download001-images{
+    cursor: pointer;
+    border-radius: 3px 0 0 3px;
+    float: left;
+    width: 22%;
+    height: 22%;
+    margin: 6px -15px 0 6px;
+}
