@@ -100,4 +100,15 @@ body{
     max-width: 700px;
     margin: 1% auto;
     text-shadow: none;
+    height: 78px;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 7px;
+    cursor: pointer;
+    animation-name: anim;
+    animation-duration: 1s;
+    transition-timing-function: ease;
+    transition: 0.3s;
 }
