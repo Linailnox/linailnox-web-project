@@ -1,6 +1,9 @@
 body{
     background-image:url(https://linailnox.github.io/images/background.jpg);
 }
+a{
+    text-decoration: none;
+}
 .main{
     box-sizing: border-box;
     position: relative;
