@@ -5,8 +5,8 @@ body{
     min-height: 750px;
     padding-top: 150px;
     box-sizing: border-box;
-    background-image: url(https://linailnox.github.io/images/background.jpg);
-    background-position: 0px 0px;
+    /*background-image: url(https://linailnox.github.io/images/background.jpg);
+    background-position: 0px 0px;*/
     text-shadow: none;
     position: relative;
     min-height: 1px;
