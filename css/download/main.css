@@ -1,8 +1,7 @@
 body{
     background-image:url(https://linailnox.github.io/images/background.jpg);
 }
-/*
-.main-up{
+.main{
     min-height: 750px;
     padding-top: 150px;
     box-sizing: border-box;
@@ -16,8 +15,6 @@ body{
     text-align: center;
     font-size: 13px;
     line-height: 2;
-    color: #666;
-    font-family: "Microsoft YaHei", Microsoft YaHei;
     font-weight: normal;
     position: relative;
     padding-bottom: 90px;
@@ -28,7 +25,7 @@ body{
     line-height: 2;
     z-index: 1;
     text-align: center;
-}
+}/*
 .main-up-one{
     background: rgba(63, 81, 181, 0.8);
     box-sizing: border-box;
