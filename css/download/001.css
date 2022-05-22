@@ -1,0 +1,25 @@
+.main-up{
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Segoe UI", Geneva, Arial, Helvetica, sans-serif;
+}
+.main-up-name{
+    color: #eee;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Segoe UI", Geneva, Arial, Helvetica, sans-serif;
+}
+.main-up-word{
+    margin-top: 15px;
+    margin: 0;
+    width: 94%;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ccc;
+}
