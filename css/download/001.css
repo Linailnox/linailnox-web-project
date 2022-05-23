@@ -29,4 +29,23 @@ a{
     font-size: 20px;
     line-height: 24px;
     color: #ccc;
+    text-align: center;
+}
+.main-up-download{
+    background-color: #1FB393;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 20px 12px 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: 1px solid #1FB393;
+    display: inline-block;
+    transition-duration: 1s;
+    transition-property: box-shadow, border-color, background-color, color;
 }
