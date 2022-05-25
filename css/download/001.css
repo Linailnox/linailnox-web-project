@@ -50,3 +50,9 @@ a{
     transition-duration: 1s;
     transition-property: box-shadow, border-color, background-color, color;
 }
+.main-down{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 940px;
+    color: white;
+}
