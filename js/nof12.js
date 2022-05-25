@@ -1,6 +1,6 @@
 /*//如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面  
 var h = window.innerHeight,w=window.innerWidth; */
-//禁用键盘
+/*//禁用键盘
 document.onkeydown = function(){
     if(window.event && window.event.keyCode == 16) {
         event.keyCode=0;
@@ -125,7 +125,7 @@ document.onkeydown = function(){
     if(window.event && window.event.keyCode == 57) {
         event.keyCode=0;
         event.returnValue=false;
-    }
+    }*/
     /*//A~Z
     if(window.event && window.event.keyCode == 65) {
         event.keyCode=0;
