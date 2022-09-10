@@ -68,7 +68,6 @@
  *               每晚灯火阑珊处，夜难寐，加班狂。
  *-->
 
-
 <!DOCTYPE html>
 <html lang="zh">
 
@@ -76,7 +75,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>❤️站❤️长❤️推❤️荐❤️个❤️屁❤️</title>
-    <link rel="stylesheet" type="text/css" href="https://Linailnox.github.io/css/nocopy.css" >
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190316399-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-190316399-3');
+    </script>
     <style type="text/css">
         p {
             margin: 0;
@@ -177,7 +182,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url(https://linailnox.github.io/images/background.gif);
+            background-image: url(https://iw233.cn/api.php?sort=mp);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center 0;
@@ -213,7 +218,8 @@
                 <p class="overlay-description">The following may be suitable for people <b>under the age of
                         18</b>.</p>
                 <div class="overlay-buttons-wrapper">
-                    <div id="accept-button" class="overlay-button">那孜然是小于18岁的啦</div>
+                    <div id="accept-button" class="overlay-button">那孜然是未满18岁</div>
+                    <div id="decline-button" class="overlay-button">满18岁</div>
                 </div>
             </div>
         </div>
@@ -221,10 +227,12 @@
     <div class="scare">
         <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"
             loop="loop"></video>
-        </video>
+                <video id="video2" class="video2" src="./nmpl.mp4"
+            loop="loop"></video>
     </div>
     <script type="text/javascript">
         const video = document.getElementById("video");
+        const video2 = document.getElementById("video2");
         const overlay = document.getElementById("overlay");
         const declineButton = document.getElementById("decline-button");
         const acceptButton = document.getElementById("accept-button");
@@ -237,6 +245,13 @@
             if (!hasClicked) hasClicked = true;
             overlay.hidden = true;
             video.play();
+            videoClick();
+        }
+        function buttonClick2(event2) {
+            event2.preventDefault();
+            if (!hasClicked) hasClicked = true;
+            overlay.hidden = true;
+            video2.play();
             videoClick();
         }
         function videoClick(event) {
