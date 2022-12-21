@@ -74,13 +74,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>❤️站❤️长❤️推❤️荐❤️个❤️屁❤️</title>
+    <title>❤️❤️❤️❤️❤️</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190316399-3"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-190316399-3');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-190316399-3');
     </script>
     <style type="text/css">
         p {
@@ -197,13 +197,13 @@
             z-index: 1;
         }
 
-        video#video {
+        video#video,video#video2{
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
 
-        video#video::-webkit-media-controls-enclosure {
+        video#video::-webkit-media-controls-enclosure,video#video2::-webkit-media-controls-enclosure{
             display: none !important;
         }
     </style>
@@ -225,10 +225,8 @@
         </div>
     </div>
     <div class="scare">
-        <video id="video" class="video" src="https://linailnox.github.io/new/002/Good.mp4"
-            loop="loop"></video>
-                <video id="video2" class="video2" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"
-            loop="loop"></video>
+        <video id="video" class="video" src="./Good.mp4" loop="loop"></video>
+        <video id="video2" class="video2" src="./nbpl.mp4" loop="loop"></video>
     </div>
     <script type="text/javascript">
         const video = document.getElementById("video");
@@ -236,23 +234,27 @@
         const overlay = document.getElementById("overlay");
         const declineButton = document.getElementById("decline-button");
         const acceptButton = document.getElementById("accept-button");
-        let hasClicked;
-        window.onbeforeunload = function () {
-            if (hasClicked) return true;
-        };
+        //let hasClicked;
+        //window.onbeforeunload = function () {
+        //    if (hasClicked) return true;
+        //};
         function buttonClick1(event) {
             event.preventDefault();
-            if (!hasClicked) hasClicked = true;
+            //if (!hasClicked) hasClicked = true;
             overlay.hidden = true;
+            video.hidden = false;
+            video2.hidden = true;
             video.play();
-            videoClick();
+            videoClick(event);
         }
-        function buttonClick2(event2) {
-            event2.preventDefault();
-            if (!hasClicked) hasClicked = true;
+        function buttonClick2(event) {
+            event.preventDefault();
+            //if (!hasClicked) hasClicked = true;
             overlay.hidden = true;
+            video.hidden = true;
+            video2.hidden = false;
             video2.play();
-            videoClick();
+            videoClick(event);
         }
         function videoClick(event) {
             if (event) event.preventDefault();
@@ -266,6 +268,7 @@
         acceptButton.addEventListener("click", buttonClick1);
         declineButton.addEventListener("click", buttonClick2);
         video.addEventListener("click", videoClick);
+        video2.addEventListener("click", videoClick);
     </script>
     <script type="text/javascript" src="https://Linailnox.github.io/js/nof12.js"></script>
 </body>
