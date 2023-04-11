@@ -1,0 +1,3 @@
+body{
+    filter: grayscale(0);/*0正常;1灰*/
+}
