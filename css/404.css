@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+.bg {
+    position: relative;
+    height: 588px;
+    background-color: #e4e4f6;
+}
+.floor {
+    height: 163px;
+    background-color: #cec3c1;
+}
+.bar1 {
+    position: absolute;
+    width: 374px;
+    top: 24px;
+    left: -154px;
+    border-bottom: 110px solid #7f83db;
+    border-right: 110px solid transparent;
+    transform: rotate(45deg);
+}
+.bar2 {
+    position: absolute;
+    width: 673px;
+    top: 295px;
+    left: -187px;
+    border-top: 110px solid #93cae4;
+    border-right: 110px solid transparent;
+    transform: rotate(45deg);
+}
+.logo {
+    position: absolute;
+    top: 32px;
+    left: 983px;
+    width: 152px;
+    height: auto;
+    max-width: 100%;
+}
+.kunkun {
+    position: absolute;
+    top: 173px;
+    left: 420px;
+    width: 300px;
+    height: 500px;
+}
+.textbox {
+    position: absolute;
+    font-size: 1.2rem;
+    color: rgb(108, 119, 234);
+    top: 50%;
+    left: 55%;
+}
