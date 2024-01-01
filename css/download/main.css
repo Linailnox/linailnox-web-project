@@ -1,5 +1,5 @@
 body{
-    background-image:url(https://linailnox.github.io/images/background.jpg);
+    background-image:url(../../images/background.jpg);
 }
 a{
     text-decoration: none;
@@ -26,6 +26,7 @@ a{
 }
 .main-downloadname{
     font-family: font2;
+    color: white;
 }
 .main-download{
     box-sizing: border-box;
