@@ -7,7 +7,14 @@ import path from 'path'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
+const pathSrc = path.resolve(__dirname, 'src')
+
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': pathSrc,
+    },
+  }
   plugins: [
     vue(),
     AutoImport({
