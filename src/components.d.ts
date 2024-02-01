@@ -5,32 +5,35 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 export {}
 
-declare module 'vue' {
-  export interface GlobalComponents {
-    Dark: typeof import('./components/icons/dark.vue')['default']
-    ElCol: typeof import('element-plus/es')['ElCol']
-    ElContainer: typeof import('element-plus/es')['ElContainer']
-    ElFooter: typeof import('element-plus/es')['ElFooter']
-    ElHeader: typeof import('element-plus/es')['ElHeader']
-    ElIcon: typeof import('element-plus/es')['ElIcon']
-    ElLink: typeof import('element-plus/es')['ElLink']
-    ElLoading: typeof import('element-plus/es')['ElLoading']
-    ElLow: typeof import('element-plus/es')['ElLow']
-    ElMain: typeof import('element-plus/es')['ElMain']
-    ElMenu: typeof import('element-plus/es')['ElMenu']
-    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
-    ElRow: typeof import('element-plus/es')['ElRow']
-    ElSkeleton: typeof import('element-plus/es')['ElSkeleton']
-    ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
-    ElSwitch: typeof import('element-plus/es')['ElSwitch']
-    ElText: typeof import('element-plus/es')['ElText']
-    IEpHouse: typeof import('~icons/ep/house')['default']
-    IEpSunny: typeof import('~icons/ep/sunny')['default']
-    Light: typeof import('./components/icons/light.vue')['default']
-    Login: typeof import('./components/login.vue')['default']
-    Menu: typeof import('./components/Menu.vue')['default']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
-    Tt: typeof import('./components/tt.vue')['default']
-  }
+declare module "vue" {
+	export interface GlobalComponents {
+		Dark: (typeof import("./components/icons/dark.vue"))["default"];
+		ElButton: (typeof import("element-plus/es"))["ElButton"];
+		ElCol: (typeof import("element-plus/es"))["ElCol"];
+		ElConfigProvider: (typeof import("element-plus/es"))["ElConfigProvider"];
+		ElContainer: (typeof import("element-plus/es"))["ElContainer"];
+		ElFooter: (typeof import("element-plus/es"))["ElFooter"];
+		ElHeader: (typeof import("element-plus/es"))["ElHeader"];
+		ElIcon: (typeof import("element-plus/es"))["ElIcon"];
+		ElLink: (typeof import("element-plus/es"))["ElLink"];
+		ElLoading: (typeof import("element-plus/es"))["ElLoading"];
+		ElLow: (typeof import("element-plus/es"))["ElLow"];
+		ElMain: (typeof import("element-plus/es"))["ElMain"];
+		ElMenu: (typeof import("element-plus/es"))["ElMenu"];
+		ElMenuItem: (typeof import("element-plus/es"))["ElMenuItem"];
+		ElRow: (typeof import("element-plus/es"))["ElRow"];
+		ElSkeleton: (typeof import("element-plus/es"))["ElSkeleton"];
+		ElSpace: (typeof import("element-plus/es"))["ElSpace"];
+		ElSubMenu: (typeof import("element-plus/es"))["ElSubMenu"];
+		ElSwitch: (typeof import("element-plus/es"))["ElSwitch"];
+		ElText: (typeof import("element-plus/es"))["ElText"];
+		IEpHouse: (typeof import("~icons/ep/house"))["default"];
+		IEpSunny: (typeof import("~icons/ep/sunny"))["default"];
+		Light: (typeof import("./components/icons/light.vue"))["default"];
+		Login: (typeof import("@/components/login.vue"))["default"];
+		Menu: (typeof import("./components/Menu.vue"))["default"];
+		RouterLink: (typeof import("vue-router"))["RouterLink"];
+		RouterView: (typeof import("vue-router"))["RouterView"];
+		Tt: (typeof import("@/components/tt.vue"))["default"];
+	}
 }
