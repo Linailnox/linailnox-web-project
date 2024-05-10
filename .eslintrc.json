@@ -6,19 +6,23 @@
 	"extends": [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
-		"plugin:vue/vue3-essential",
+		"plugin:vue/vue3-recommended",
 		"plugin:prettier/recommended"
 	],
+	"parser": "vue-eslint-parser",
+	"plugins": ["@typescript-eslint", "vue"],
+	"root": true,
 	"parserOptions": {
 		"ecmaVersion": "latest",
 		"parser": "@typescript-eslint/parser",
 		"sourceType": "module"
 	},
-	"plugins": ["@typescript-eslint", "vue"],
 	"rules": {
 		"indent": ["error", "tab"],
 		"linebreak-style": ["error", "windows"],
 		"quotes": ["error", "double"],
-		"semi": ["error", "always"]
+		"semi": ["error", "always"],
+		    // 关闭驼峰命名规则
+		"eslint-plugin-vue/multi-word-component-names":"off"
 	}
 }

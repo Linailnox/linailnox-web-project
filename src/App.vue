@@ -10,7 +10,7 @@
 				</router-view>
 			</el-main>
 			<el-footer
-				><router-link to="/data">跳转到home</router-link></el-footer
+				><router-link to="/data">e跳转到home</router-link></el-footer
 			>
 		</el-container>
 	</el-config-provider>

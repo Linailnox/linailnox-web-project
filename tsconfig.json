@@ -12,12 +12,12 @@
 		"esModuleInterop": true,
 		"lib": ["esnext", "dom"],
 		"paths": {
-			"@/*": ["src/*"],
+			"@/*": ["src/*"]
 		},
-		"skipLibCheck": true,
+		"skipLibCheck": true
 	},
 	"vueCompilerOptions": {
-		"target": 3,
+		"target": 3
 	},
-	"include": ["src/**/*"],
+	"include": ["src/**/*"]
 }

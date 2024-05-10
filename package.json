@@ -7,38 +7,40 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"prettier":"pnpm exec prettier . --write",
-		"eslint": "pnpm exec eslint --fix"
+		"prettier": "pnpm exec prettier . --write",
+		"eslint": "pnpm exec eslint --fix",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@element-plus/icons-vue": "^2.3.1",
-		"element-plus": "^2.5.3",
+		"element-plus": "^2.7.2",
 		"pinia": "^2.1.7",
 		"unplugin-auto-import": "^0.17.5",
-		"unplugin-icons": "^0.18.3",
-		"vue": "^3.4.15",
-		"vue-i18n": "^9.9.1",
-		"vue-router": "^4.2.5"
+		"unplugin-icons": "^0.18.5",
+		"vue": "^3.4.27",
+		"vue-i18n": "^9.13.1",
+		"vue-router": "^4.3.2"
 	},
 	"devDependencies": {
-		"@iconify-json/ep": "^1.1.14",
-		"@typescript-eslint/eslint-plugin": "^6.20.0",
-		"@typescript-eslint/parser": "^6.20.0",
-		"@vitejs/plugin-vue": "^4.6.2",
-		"@vueuse/core": "^10.7.2",
-		"eslint": "^8.56.0",
+		"@iconify-json/ep": "^1.1.15",
+		"@typescript-eslint/eslint-plugin": "^7.8.0",
+		"@typescript-eslint/parser": "^7.8.0",
+		"@vitejs/plugin-vue": "^5.0.4",
+		"@vueuse/core": "^10.9.0",
+		"eslint": "^8.57.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.1.3",
-		"eslint-plugin-vue": "^9.21.1",
-		"husky": "^9.0.7",
-		"lint-staged": "^15.2.1",
-		"prettier": "3.2.4",
-		"sass": "^1.70.0",
-		"typescript": "^5.3.3",
+		"eslint-plugin-vue": "^9.26.0",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
+		"prettier": "^3.2.5",
+		"sass": "^1.77.0",
+		"typescript": "^5.4.5",
 		"unplugin-auto-import": "^0.17.3",
 		"unplugin-vue-components": "^0.26.0",
-		"vite": "^5.0.12",
-		"vite-plugin-vue-devtools": "^7.0.13"
+		"vite": "^5.2.11",
+		"vite-plugin-vue-devtools": "^7.1.3",
+		"vue-eslint-parser": "^9.4.2"
 	},
 	"husky": {
 		"hooks": {
@@ -46,9 +48,11 @@
 		}
 	},
 	"lint-staged": {
-		"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-			"eslint --fix",
-			"git add"
+		"**/*.{js,jsx,ts,tsx,vue}": "eslint --ext .js,.jsx,.ts,.tsx,.vue",
+		"src/*.{js,jsx,tsx,ts,,scss,css,vue,md,json}": [
+			"prettier --write",
+			"eslint --fix"
 		]
 	}
 }
+
