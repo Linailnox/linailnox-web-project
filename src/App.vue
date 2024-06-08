@@ -4,7 +4,7 @@
 			<el-header class="header"><Menu /></el-header>
 			<el-main>
 				<router-view v-slot="{ Component }">
-					<transition name="route.meta.transition">
+					<transition name="el-fade-in">
 						<component :is="Component" />
 					</transition>
 				</router-view>

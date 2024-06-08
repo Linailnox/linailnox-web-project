@@ -7,6 +7,7 @@ export {}
 declare global {
 	const EffectScope: (typeof import("vue"))["EffectScope"];
 	const ElLoading: (typeof import("element-plus/es"))["ElLoading"];
+	const Icon: (typeof import("@iconify/vue"))["Icon"];
 	const asyncComputed: (typeof import("@vueuse/core"))["asyncComputed"];
 	const autoResetRef: (typeof import("@vueuse/core"))["autoResetRef"];
 	const computed: (typeof import("vue"))["computed"];

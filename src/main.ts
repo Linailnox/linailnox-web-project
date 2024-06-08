@@ -1,6 +1,7 @@
 import router from "@/routers/index";
 import { ElConfigProvider } from "element-plus";
 import "element-plus/theme-chalk/dark/css-vars.css";
+import "element-plus/theme-chalk/base.css";
 import App from "@/App.vue";
 import ElementPlus from "element-plus";
 import { createPinia } from "pinia";
