@@ -9,17 +9,15 @@
 					</transition>
 				</router-view>
 			</el-main>
-			<el-footer
-				><router-link to="/data">e跳转到home</router-link></el-footer
-			>
+			<el-footer><router-link to="/data">e跳转到home</router-link></el-footer>
 		</el-container>
 	</el-config-provider>
 </template>
 
 <script setup lang="ts">
-import { useCounterStore } from "@/stores/uiStore";
-const uiStores = useCounterStore();
-const locale = uiStores.doubleLang;
+import { useCounterStore } from '@/stores/uiStore'
+const uiStores = useCounterStore()
+const locale = uiStores.doubleLang
 </script>
 
 <style scoped type="scss">

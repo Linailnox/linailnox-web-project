@@ -1,7 +1,7 @@
 export default {
 	router: {
-		about: "About",
-		prank: "Prank",
-		home: "Home",
+		about: 'About',
+		prank: 'Prank',
+		home: 'Home',
 	},
-};
+}

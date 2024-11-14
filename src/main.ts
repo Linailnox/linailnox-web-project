@@ -1,25 +1,25 @@
-import router from "@/routers/index";
-import { ElConfigProvider } from "element-plus";
-import "element-plus/theme-chalk/dark/css-vars.css";
-import "element-plus/theme-chalk/base.css";
-import App from "@/App.vue";
-import ElementPlus from "element-plus";
-import { createPinia } from "pinia";
-import { i18n } from "@/locales/index";
+import router from '@/routers/index'
+import { ElConfigProvider } from 'element-plus'
+import 'element-plus/theme-chalk/dark/css-vars.css'
+import 'element-plus/theme-chalk/base.css'
+import App from '@/App.vue'
+import ElementPlus from 'element-plus'
+import { createPinia } from 'pinia'
+import { i18n } from '@/locales/index'
 // import zhCn from "element-plus/dist/locale/zh-cn.mjs";
 
-const app = createApp(App);
-const pinia = createPinia();
+const app = createApp(App)
+const pinia = createPinia()
 
-app.use(pinia);
+app.use(pinia)
 
-app.use(i18n);
-app.use(ElementPlus);
-app.use(router);
+app.use(i18n)
+app.use(ElementPlus)
+app.use(router)
 
 router.isReady().then(() => {
-	app.mount("#app");
-});
+	app.mount('#app')
+})
 
 export default defineComponent({
 	components: {
@@ -28,7 +28,7 @@ export default defineComponent({
 	setup() {
 		return {
 			zIndex: 3000,
-			size: "small",
-		};
+			size: 'small',
+		}
 	},
-});
+})

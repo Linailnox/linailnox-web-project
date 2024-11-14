@@ -8,12 +8,13 @@
 					ref="menu"
 					:ellipsis="true"
 					:default-openeds="['0', '1']"
-					@open="handleOpen">
+					@open="handleOpen"
+				>
 					<template v-for="item in $router.options.routes">
 						<el-menu-item
 							:index="item.path"
 							:class="$route.path == item.path ? 'is-active' : ''"
-							>{{ $t("router." + item.name) }}</el-menu-item
+							>{{ $t('router.' + item.name) }}</el-menu-item
 						>
 						<div v-if="item.name == 'home'" class="flex-grow" />
 					</template>
@@ -26,7 +27,8 @@
 					v-model="darkMode"
 					:active-action-icon="dark"
 					:inactive-action-icon="light"
-					@change="toggleDark()" />
+					@change="toggleDark()"
+				/>
 			</el-col>
 		</el-row>
 	</div>
@@ -67,10 +69,7 @@ if (htmlElement) {
 	transition: background-color 0.5s;
 	overflow-y: auto;
 	padding: 0 32px;
-	background-image: radial-gradient(
-		transparent 1px,
-		var(--el-menu-bg-color) 1px
-	);
+	background-image: radial-gradient(transparent 1px, var(--el-menu-bg-color) 1px);
 	background-size: 4px 4px;
 	backdrop-filter: saturate(50%) blur(4px);
 	border-bottom: solid 1px var(--el-menu-border-color);

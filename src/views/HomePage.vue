@@ -8,10 +8,7 @@
 				</profile>
 				<socialButton class="socialButton">
 					<el-button circle
-						><Icon
-							icon="ph:github-logo-bold"
-							size="large"
-							width="24"
+						><Icon icon="ph:github-logo-bold" size="large" width="24"
 					/></el-button>
 				</socialButton>
 			</el-space>
@@ -22,11 +19,11 @@
 	</el-row>
 </template>
 <script setup lang="ts">
-import avatar from "@/assets/avatar.jpg";
-import { Icon } from "@iconify/vue";
-import TypeIt from "typeit";
+import avatar from '@/assets/avatar.jpg'
+import { Icon } from '@iconify/vue'
+import TypeIt from 'typeit'
 onMounted(() => {
-	new TypeIt("#multipleStrings", {
+	new TypeIt('#multipleStrings', {
 		strings: [
 			"Hi, I'm <strong> Linailnox </strong>👋。",
 			"A NodeJS Full Stack <strong style='font-size: 1.875rem;'>< Developer /></strong>",
@@ -38,10 +35,10 @@ onMounted(() => {
 	})
 		.exec(async () => {
 			//-- Return a promise that resolves after something happens.
-			await new Promise(() => {});
+			await new Promise(() => {})
 		})
-		.go();
-});
+		.go()
+})
 </script>
 <style scoped lang="scss">
 .el-space {
