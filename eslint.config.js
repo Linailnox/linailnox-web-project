@@ -19,6 +19,11 @@ export default [
 			},
 		},
 	},
+	{
+		rules: {
+			semi: 0,
+		},
+	},
 	pluginJs.configs.recommended,
 	...tseslint.configs.recommended,
 	...pluginVue.configs["flat/essential"],
