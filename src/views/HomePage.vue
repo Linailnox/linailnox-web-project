@@ -19,11 +19,11 @@
 	</el-row>
 </template>
 <script setup lang="ts">
-import avatar from '@/assets/avatar.jpg'
-import { Icon } from '@iconify/vue'
-import TypeIt from 'typeit'
+import avatar from "@/assets/avatar.jpg"
+import { Icon } from "@iconify/vue"
+import TypeIt from "typeit"
 onMounted(() => {
-	new TypeIt('#multipleStrings', {
+	new TypeIt("#multipleStrings", {
 		strings: [
 			"Hi, I'm <strong> Linailnox </strong>👋。",
 			"A NodeJS Full Stack <strong style='font-size: 1.875rem;'>< Developer /></strong>",

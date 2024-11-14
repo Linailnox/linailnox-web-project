@@ -1,20 +1,20 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router"
 
 const routes = [
 	{
-		path: '/',
-		name: 'home',
-		component: () => import('@/views/HomePage.vue'),
+		path: "/",
+		name: "home",
+		component: () => import("@/views/HomePage.vue"),
 	},
 	{
-		path: '/prank',
-		name: 'prank',
-		component: () => import('@/views/HomePage.vue'),
+		path: "/prank",
+		name: "prank",
+		component: () => import("@/views/HomePage.vue"),
 	},
 	{
-		path: '/about',
-		name: 'about',
-		component: () => import('@/views/AboutPage.vue'),
+		path: "/about",
+		name: "about",
+		component: () => import("@/views/AboutPage.vue"),
 	},
 ]
 
@@ -24,9 +24,9 @@ const router = createRouter({
 })
 
 router.afterEach((to, from) => {
-	const toDepth = to.path.split('/').length
-	const fromDepth = from.path.split('/').length
-	to.meta.transition = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+	const toDepth = to.path.split("/").length
+	const fromDepth = from.path.split("/").length
+	to.meta.transition = toDepth < fromDepth ? "slide-right" : "slide-left"
 })
 
 // 导出对象

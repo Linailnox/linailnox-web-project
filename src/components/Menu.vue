@@ -14,7 +14,7 @@
 						<el-menu-item
 							:index="item.path"
 							:class="$route.path == item.path ? 'is-active' : ''"
-							>{{ $t('router.' + item.name) }}</el-menu-item
+							>{{ $t("router." + item.name) }}</el-menu-item
 						>
 						<div v-if="item.name == 'home'" class="flex-grow" />
 					</template>
