@@ -8,15 +8,14 @@
 					ref="menu"
 					:ellipsis="true"
 					:default-openeds="['0', '1']"
-					@open="handleOpen"
 				>
 					<template v-for="item in $router.options.routes">
 						<el-menu-item
 							:index="item.path"
-							:class="$route.path == item.path ? 'is-active' : ''"
+							:class="$route.path === item.path ? 'is-active' : ''"
 							>{{ $t("router." + item.name) }}</el-menu-item
 						>
-						<div v-if="item.name == 'home'" class="flex-grow" />
+						<div v-if="item.name === 'home'" class="flex-grow" />
 					</template>
 				</el-menu>
 			</el-col>

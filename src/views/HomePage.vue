@@ -52,6 +52,6 @@ onMounted(() => {
 	height: 100%;
 }
 .socialButton {
-	transition: bottom 1s ease; /* 添加过渡效果 */
+	transition: bottom 1s ease;
 }
 </style>
