@@ -24,7 +24,7 @@
 			<el-col :span="3">
 				<el-switch
 					class="darkMode"
-					v-model="darkMode"
+					v-model="isDark"
 					:active-action-icon="dark"
 					:inactive-action-icon="light"
 					@change="toggleDark()"
@@ -35,19 +35,11 @@
 </template>
 
 <script setup type="ts">
-import dark from "@/components/icons/dark.vue";
-import light from "@/components/icons/light.vue";
-const isDark = useDark({ disableTransition: false });  // the default value is true
-const toggleDark = useToggle(isDark);
-const darkMode = ref("");
-const htmlElement = document.querySelector("html");
-if (htmlElement) {
-	if (htmlElement.className == "dark") {
-		darkMode.value = true;
-	} else {
-		darkMode.value = false;
-	}
-}
+import dark from "@/assets/icons/dark.vue";
+import light from "@/assets/icons/light.vue";
+const darkMode = useDark({ disableTransition: false });  // the default value is true
+const isDark = computed(() => darkMode.value);
+const toggleDark = useToggle(darkMode);
 </script>
 
 <style scoped lang="scss">

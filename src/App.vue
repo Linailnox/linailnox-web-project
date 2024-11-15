@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { useCounterStore } from "@/stores/uiStore"
+import { useCounterStore } from "@/stores/settingStore"
 const uiStores = useCounterStore()
 const locale = uiStores.doubleLang
 </script>

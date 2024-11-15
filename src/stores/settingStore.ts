@@ -19,21 +19,5 @@ export const useCounterStore = defineStore("counter", () => {
 			return zh
 		}
 	})
-
-	// 方法action
-	function increment(data: string) {
-		console.log(data, i18n)
-		if (data === "zh") {
-			lang.value = zh
-			i18n.global.locale.value = data
-			localStorage.setItem("language", data)
-		} else if (data === "en") {
-			lang.value = en
-			i18n.global.locale.value = data
-			localStorage.setItem("language", data)
-		}
-	}
-
-	return { count, increment, doubleLang }
+	return { count, doubleLang }
 })
-export default useCounterStore
