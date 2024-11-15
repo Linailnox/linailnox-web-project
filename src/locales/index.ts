@@ -1,8 +1,8 @@
 import zh from "@/locales/zh-cn"
 import en from "@/locales/en"
-import eZhCn from 'element-plus/dist/locale/zh-cn.mjs'
-import eEn from 'element-plus/dist/locale/en.mjs'
-import { createI18n, useI18n } from "vue-i18n";
+import eZhCn from "element-plus/dist/locale/zh-cn.mjs"
+import eEn from "element-plus/dist/locale/en.mjs"
+import { createI18n, useI18n } from "vue-i18n"
 const messages = {
 	zh,
 	en,
