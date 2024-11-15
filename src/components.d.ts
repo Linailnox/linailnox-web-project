@@ -5,26 +5,24 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 export {}
 
-declare module "vue" {
-	export interface GlobalComponents {
-		Dark: (typeof import("./components/icons/dark.vue"))["default"]
-		ElAvatar: (typeof import("element-plus/es"))["ElAvatar"]
-		ElButton: (typeof import("element-plus/es"))["ElButton"]
-		ElCol: (typeof import("element-plus/es"))["ElCol"]
-		ElConfigProvider: (typeof import("element-plus/es"))["ElConfigProvider"]
-		ElContainer: (typeof import("element-plus/es"))["ElContainer"]
-		ElFooter: (typeof import("element-plus/es"))["ElFooter"]
-		ElHeader: (typeof import("element-plus/es"))["ElHeader"]
-		ElMain: (typeof import("element-plus/es"))["ElMain"]
-		ElMenu: (typeof import("element-plus/es"))["ElMenu"]
-		ElMenuItem: (typeof import("element-plus/es"))["ElMenuItem"]
-		ElRow: (typeof import("element-plus/es"))["ElRow"]
-		ElSpace: (typeof import("element-plus/es"))["ElSpace"]
-		ElSwitch: (typeof import("element-plus/es"))["ElSwitch"]
-		ElText: (typeof import("element-plus/es"))["ElText"]
-		Light: (typeof import("./components/icons/light.vue"))["default"]
-		Menu: (typeof import("./components/Menu.vue"))["default"]
-		RouterLink: (typeof import("vue-router"))["RouterLink"]
-		RouterView: (typeof import("vue-router"))["RouterView"]
-	}
+declare module 'vue' {
+  export interface GlobalComponents {
+    ElAvatar: typeof import('element-plus/es')['ElAvatar']
+    ElButton: typeof import('element-plus/es')['ElButton']
+    ElCol: typeof import('element-plus/es')['ElCol']
+    ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
+    ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElFooter: typeof import('element-plus/es')['ElFooter']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElMain: typeof import('element-plus/es')['ElMain']
+    ElMenu: typeof import('element-plus/es')['ElMenu']
+    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+    ElRow: typeof import('element-plus/es')['ElRow']
+    ElSpace: typeof import('element-plus/es')['ElSpace']
+    ElSwitch: typeof import('element-plus/es')['ElSwitch']
+    ElText: typeof import('element-plus/es')['ElText']
+    Menu: typeof import('./components/Menu.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
+  }
 }

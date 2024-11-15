@@ -6,13 +6,11 @@ import App from "@/App.vue"
 import ElementPlus from "element-plus"
 import { createPinia } from "pinia"
 import { i18n } from "@/locales/index"
-// import zhCn from "element-plus/dist/locale/zh-cn.mjs";
 
 const app = createApp(App)
 const pinia = createPinia()
 
 app.use(pinia)
-
 app.use(i18n)
 app.use(ElementPlus)
 app.use(router)

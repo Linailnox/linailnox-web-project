@@ -1,5 +1,5 @@
 <template>
-	<el-config-provider :locale="locale">
+	<el-config-provider :locale="elementLocale">
 		<el-container>
 			<el-header class="header"><Menu /></el-header>
 			<el-main>
@@ -15,9 +15,8 @@
 </template>
 
 <script setup lang="ts">
-import { useCounterStore } from "@/stores/settingStore"
-const uiStores = useCounterStore()
-const locale = uiStores.doubleLang
+import { useElementPlusLocale } from "@/locales/useElementPlusLocale"
+const { elementLocale } = useElementPlusLocale()
 </script>
 
 <style scoped type="scss">
@@ -30,7 +29,7 @@ const locale = uiStores.doubleLang
 }
 
 :global(body) {
-	margin: 0px;
+	margin: 0;
 }
 
 :global(html),
