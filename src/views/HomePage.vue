@@ -26,18 +26,13 @@ onMounted(() => {
 	new TypeIt("#multipleStrings", {
 		strings: [
 			"Hi, I'm <strong> Linailnox </strong>👋。",
-			"A NodeJS Full Stack <strong style='font-size: 1.875rem;'>< Developer /></strong>",
-			"<span style='opacity: .8;font-size: 14px'>An independent developer coding with love.</span>",
+			"A Full Stack <strong style='font-size: 1.875rem;'>< Developer /></strong>",
+			"<span style='opacity: .8;font-size: 14px'>May all the beauty be blessed.</span>",
 		],
 		speed: 25,
 		cursor: false,
 		waitUntilVisible: true,
-	})
-		.exec(async () => {
-			//-- Return a promise that resolves after something happens.
-			await new Promise(() => {})
-		})
-		.go()
+	}).go()
 })
 </script>
 <style scoped lang="scss">
