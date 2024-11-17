@@ -3,8 +3,7 @@
 		<el-col :md="8" :lg="12" :xl="12">
 			<el-space direction="vertical">
 				<profile>
-					<el-text id="multipleStrings" size="large"></el-text>
-					<el-text id="smallStrings" size="large"></el-text>
+					<el-text class="wenkai-font" id="multipleStrings" size="large"></el-text>
 				</profile>
 				<socialButton class="socialButton">
 					<el-button circle

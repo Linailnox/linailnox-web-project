@@ -21,6 +21,7 @@ const { elementLocale } = useElementPlusLocale()
 
 <style scoped type="scss">
 :global(html) {
+	font-family: "LXGW WenKai Screen", sans-serif;
 	background-color: var(--el-bg-color);
 	transition: background-color var(--el-transition-duration);
 }
@@ -51,4 +52,10 @@ const { elementLocale } = useElementPlusLocale()
 .el-main {
 	overflow: unset;
 }
+
+@font-face {
+	font-family: "LXGW WenKai Screen";
+	src: url("@/assets/fonts/LXGWWenKaiScreen.ttf");
+}
+
 </style>
