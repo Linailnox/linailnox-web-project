@@ -57,5 +57,4 @@ const { elementLocale } = useElementPlusLocale()
 	font-family: "LXGW WenKai Screen";
 	src: url("@/assets/fonts/LXGWWenKaiScreen.ttf");
 }
-
 </style>

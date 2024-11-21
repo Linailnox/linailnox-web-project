@@ -12,6 +12,7 @@ import path from "path"
 import Icons from "unplugin-icons/vite"
 import IconsResolver from "unplugin-icons/resolver"
 import VueDevTools from "vite-plugin-vue-devtools"
+import TurboConsole from "unplugin-turbo-console/vite"
 
 const pathSrc = path.resolve(__dirname, "src")
 
@@ -51,5 +52,6 @@ export default defineConfig({
 		Icons({
 			autoInstall: true,
 		}),
+		TurboConsole({}),
 	],
 })

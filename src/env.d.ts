@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
-
+/// <reference types="unplugin-turbo-console/client" />
 declare module "*.vue" {
 	import { DefineComponent } from "vue"
 	const component: DefineComponent<object, object, never>
