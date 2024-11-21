@@ -1,20 +1,16 @@
-/*
- * @Author: Linailnox
- * @Date: 2024-01-01 15:28:30
- * Copyright (c) 2020 - 2024 by Linailnox, All Rights Reserved.
- */
+import path from "path"
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
+import VueDevTools from "vite-plugin-vue-devtools"
+import VueRouter from "unplugin-vue-router/vite"
+import { VueRouterAutoImports } from "unplugin-vue-router"
 import AutoImport from "unplugin-auto-import/vite"
 import Components from "unplugin-vue-components/vite"
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
-import path from "path"
 import Icons from "unplugin-icons/vite"
 import IconsResolver from "unplugin-icons/resolver"
-import VueDevTools from "vite-plugin-vue-devtools"
 import TurboConsole from "unplugin-turbo-console/vite"
-import VueRouter from "unplugin-vue-router/vite"
-import { VueRouterAutoImports } from "unplugin-vue-router"
+
 const pathSrc = path.resolve(__dirname, "src")
 
 export default defineConfig({
@@ -26,6 +22,7 @@ export default defineConfig({
 	plugins: [
 		vue(),
 		VueDevTools(),
+		TurboConsole(),
 		AutoImport({
 			imports: ["vue", "@vueuse/core", VueRouterAutoImports],
 			resolvers: [
@@ -53,7 +50,6 @@ export default defineConfig({
 		Icons({
 			autoInstall: true,
 		}),
-		TurboConsole(),
 		VueRouter({
 			dts: "./src/auto-router.d.ts",
 		}),
