@@ -13,7 +13,8 @@ import Icons from "unplugin-icons/vite"
 import IconsResolver from "unplugin-icons/resolver"
 import VueDevTools from "vite-plugin-vue-devtools"
 import TurboConsole from "unplugin-turbo-console/vite"
-
+import VueRouter from "unplugin-vue-router/vite"
+import { VueRouterAutoImports } from "unplugin-vue-router"
 const pathSrc = path.resolve(__dirname, "src")
 
 export default defineConfig({
@@ -26,7 +27,7 @@ export default defineConfig({
 		vue(),
 		VueDevTools(),
 		AutoImport({
-			imports: ["vue", "@vueuse/core"],
+			imports: ["vue", "@vueuse/core", VueRouterAutoImports],
 			resolvers: [
 				// 自动导入图标组件
 				IconsResolver({
@@ -52,6 +53,9 @@ export default defineConfig({
 		Icons({
 			autoInstall: true,
 		}),
-		TurboConsole({}),
+		TurboConsole(),
+		VueRouter({
+			dts: "./src/auto-router.d.ts",
+		}),
 	],
 })

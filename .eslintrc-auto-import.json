@@ -290,6 +290,10 @@
 		"watchThrottled": true,
 		"watchTriggerable": true,
 		"watchWithFilter": true,
-		"whenever": true
+		"whenever": true,
+		"onBeforeRouteLeave": true,
+		"onBeforeRouteUpdate": true,
+		"useRoute": true,
+		"useRouter": true
 	}
 }

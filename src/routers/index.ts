@@ -1,27 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router"
-
-const routes = [
-	{
-		path: "/",
-		name: "home",
-		component: () => import("@/views/HomePage.vue"),
-	},
-	{
-		path: "/prank",
-		name: "prank",
-		component: () => import("@/views/HomePage.vue"),
-	},
-	{
-		path: "/about",
-		name: "about",
-		component: () => import("@/views/AboutPage.vue"),
-	},
-]
+import { routes, handleHotUpdate } from "vue-router/auto-routes"
 
 const router = createRouter({
 	history: createWebHistory(),
 	routes,
 })
+
+if (import.meta.hot) {
+	handleHotUpdate(router)
+}
 
 router.afterEach((to, from) => {
 	const toDepth = to.path.split("/").length
