@@ -55,4 +55,11 @@ export default defineConfig({
 			dts: "./src/auto-router.d.ts",
 		}),
 	],
+	css: {
+		preprocessorOptions: {
+			scss: {
+				silenceDeprecations: ["legacy-js-api"],
+			},
+		},
+	},
 })
