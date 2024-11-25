@@ -41,7 +41,7 @@ const isDark = computed(() => darkMode.value);
 const toggleDark = useToggle(darkMode);
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .el-col {
 	border-radius: 4px;
 	min-height: 60px;

@@ -34,7 +34,7 @@ onMounted(() => {
 	}).go()
 })
 </script>
-<style scoped lang="scss">
+<style scoped>
 .el-space {
 	display: flex;
 }
