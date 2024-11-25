@@ -6,7 +6,8 @@ import App from "@/App.vue"
 import ElementPlus from "element-plus"
 import { createPinia } from "pinia"
 import { i18n } from "@/locales/index"
-// main.ts
+import "virtual:unocss-devtools"
+import "virtual:uno.css"
 import "~console/theme-detect"
 const app = createApp(App)
 const pinia = createPinia()

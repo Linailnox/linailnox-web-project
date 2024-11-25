@@ -10,7 +10,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
 import Icons from "unplugin-icons/vite"
 import IconsResolver from "unplugin-icons/resolver"
 import TurboConsole from "unplugin-turbo-console/vite"
-
+import UnoCSS from "unocss/vite"
 const pathSrc = path.resolve(__dirname, "src")
 
 export default defineConfig({
@@ -23,6 +23,7 @@ export default defineConfig({
 		vue(),
 		VueDevTools(),
 		TurboConsole(),
+		UnoCSS(),
 		AutoImport({
 			imports: ["vue", "@vueuse/core", VueRouterAutoImports],
 			resolvers: [

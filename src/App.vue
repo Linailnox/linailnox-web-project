@@ -1,8 +1,8 @@
 <template>
 	<el-config-provider :locale="elementLocale">
-		<el-container>
-			<el-header class="header"><Menu /></el-header>
-			<el-main>
+		<el-container font-lxgw>
+			<el-header p-0><Menu /></el-header>
+			<el-main overf-hidden="">
 				<router-view v-slot="{ Component }">
 					<transition name="el-fade-in">
 						<component :is="Component" />
@@ -19,38 +19,24 @@ import { useElementPlusLocale } from "@/locales/useElementPlusLocale"
 const { elementLocale } = useElementPlusLocale()
 </script>
 
-<style scoped type="scss">
-:global(html) {
-	font-family: "LXGW WenKai Screen", sans-serif;
+<style>
+html {
 	background-color: var(--el-bg-color);
 	transition: background-color var(--el-transition-duration);
 }
-:global(html.dark) {
+html.dark {
 	--el-fill-color-blank: black !important;
 }
 
-:global(body) {
+body {
 	margin: 0;
 }
 
-:global(html),
-:global(body),
-:global(#app),
+html,
+body,
+#app,
 .el-container {
 	height: 100%;
-}
-
-.el-header {
-	position: sticky;
-	padding: 0 0px;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 999;
-}
-
-.el-main {
-	overflow: unset;
 }
 
 @font-face {

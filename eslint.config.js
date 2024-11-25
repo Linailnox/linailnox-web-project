@@ -3,6 +3,7 @@ import pluginJs from "@eslint/js"
 import tseslint from "typescript-eslint"
 import pluginVue from "eslint-plugin-vue"
 import pluginPrettierRecommendedConfigs from "eslint-plugin-prettier/recommended"
+import unocss from "@unocss/eslint-config/flat"
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -24,6 +25,7 @@ export default [
 			semi: 0,
 		},
 	},
+	unocss,
 	pluginJs.configs.recommended,
 	...tseslint.configs.recommended,
 	...pluginVue.configs["flat/essential"],
