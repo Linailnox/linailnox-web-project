@@ -15,7 +15,7 @@ export default defineConfig({
 						provider: "none",
 					},
 				],
-			}
+			},
 		}),
 	],
 })

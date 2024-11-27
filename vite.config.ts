@@ -23,7 +23,9 @@ export default defineConfig({
 		vue(),
 		VueDevTools(),
 		TurboConsole(),
-		UnoCSS(),
+		UnoCSS({
+			mode: "vue-scoped",
+		}),
 		AutoImport({
 			imports: ["vue", "@vueuse/core", VueRouterAutoImports],
 			resolvers: [

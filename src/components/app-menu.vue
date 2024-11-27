@@ -1,26 +1,28 @@
 <template>
 	<div class="common-layout">
-		<el-row :gutter="10">
-			<el-col :span="21">
+		<el-row :gutter="10" type="flex" align="middle">
+			<el-col :span="21" min-h-60px>
 				<el-menu
 					router
 					mode="horizontal"
 					ref="menu"
 					:ellipsis="true"
 					:default-openeds="['0', '1']"
+					border-none
+					bg-transparent
 				>
-					<template v-for="item in $router.options.routes">
+					<template v-for="item in $router.options.routes" :key="item.path">
 						<el-menu-item
 							:index="item.path"
 							:class="$route.path === item.path ? 'is-active' : ''"
 							>{{ $t("router." + item.name) }}</el-menu-item
 						>
-						<div v-if="item.name === '/'" class="flex-grow" />
+						<div v-if="item.name === '/'" grow />
 					</template>
 				</el-menu>
 			</el-col>
 
-			<el-col :span="3">
+			<el-col :span="3" min-h-60px>
 				<el-switch
 					class="darkMode"
 					v-model="isDark"
@@ -42,19 +44,6 @@ const toggleDark = useToggle(darkMode);
 </script>
 
 <style scoped>
-.el-col {
-	border-radius: 4px;
-	min-height: 60px;
-}
-
-.grid-content {
-	border-radius: 4px;
-	min-height: 60px;
-}
-.flex-grow {
-	flex-grow: 1;
-}
-
 .common-layout {
 	position: relative;
 	transition: background-color 0.5s;
@@ -66,40 +55,12 @@ const toggleDark = useToggle(darkMode);
 	border-bottom: solid 1px var(--el-menu-border-color);
 }
 
-.logo,
-.name,
 .darkMode {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.name {
-	position: relative;
-	left: 5%;
-}
-
-.el-link {
-	transform: color 0.3s;
-}
-
-.el-menu {
-	border-bottom: none;
-	background-color: transparent;
-}
-
-.darkMode {
-	justify-content: space-between;
-	margin-top: 10%;
 	border-radius: 8px;
-	align-items: center;
 	--el-switch-on-color: #2c2c2c;
 	--el-switch-off-color: #dcdfe6;
 	--el-switch-border-color: var(--el-color-primary);
-	.el-switch__action {
-		width: 14px;
-		height: 14px;
-	}
+
 }
 
 :deep(.dark-icon) {

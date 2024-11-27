@@ -1,15 +1,11 @@
 <template>
-	<el-row class="row-bg" type="flex" justify="space-evenly" align="middle">
+	<el-row type="flex" justify="space-evenly" align="middle" h-full>
 		<el-col :md="8" :lg="12" :xl="12">
 			<el-space direction="vertical">
-				<profile>
-					<el-text class="wenkai-font" id="multipleStrings" size="large"></el-text>
-				</profile>
-				<socialButton class="socialButton">
-					<el-button circle
-						><Icon icon="ph:github-logo-bold" size="large" width="24"
-					/></el-button>
-				</socialButton>
+				<el-text id="multipleStrings" text-4xl></el-text>
+				<el-button circle transition>
+					<Icon icon="ph:github-logo-bold" size="large" width="24" />
+				</el-button>
 			</el-space>
 		</el-col>
 		<el-col :span="5.5">
@@ -34,18 +30,3 @@ onMounted(() => {
 	}).go()
 })
 </script>
-<style scoped>
-.el-space {
-	display: flex;
-}
-
-#multipleStrings {
-	font-size: 2.25rem;
-}
-.row-bg {
-	height: 100%;
-}
-.socialButton {
-	transition: bottom 1s ease;
-}
-</style>

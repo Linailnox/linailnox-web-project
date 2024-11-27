@@ -1,7 +1,7 @@
 <template>
 	<el-config-provider :locale="elementLocale">
 		<el-container font-lxgw>
-			<el-header p-0><Menu /></el-header>
+			<el-header p-0><app-menu /></el-header>
 			<el-main overf-hidden="">
 				<router-view v-slot="{ Component }">
 					<transition name="el-fade-in">
