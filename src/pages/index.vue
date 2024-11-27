@@ -9,12 +9,11 @@
 			</el-space>
 		</el-col>
 		<el-col :span="5.5">
-			<el-avatar :size="300" fit="cover" :src="avatar" />
+			<el-avatar :size="300" fit="cover" src="@/assets/avatar" />
 		</el-col>
 	</el-row>
 </template>
 <script setup lang="ts">
-import avatar from "@/assets/avatar.jpg"
 import { Icon } from "@iconify/vue"
 import TypeIt from "typeit"
 onMounted(() => {
