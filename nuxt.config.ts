@@ -33,16 +33,6 @@ export default defineNuxtConfig({
 	i18n: {
 		vueI18n: "./i18n.config.ts",
 	},
-	vite: {
-		css: {
-			preprocessorOptions: {
-				scss: {
-					api: 'modern-compiler',
-					additionalData: `@use "@/assets/scss/element/index.scss" as element;`,
-				},
-			},
-		},
-	},
 	css: [
 		'@unocss/reset/tailwind.css',
 		'@/assets/scss/index.scss'

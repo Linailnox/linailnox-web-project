@@ -17,7 +17,7 @@
 							:class="$router.path === item.path ? 'is-active' : ''"
 							>{{ $t("router." + item.name) }}</el-menu-item
 						>
-						<div v-if="item.name === '/'" grow />
+						<div v-if="item.name === 'index'" grow />
 					</template>
 				</el-menu>
 			</el-col>

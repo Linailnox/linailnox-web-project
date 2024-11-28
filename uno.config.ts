@@ -5,7 +5,9 @@ export default mergeConfigs([
 	config,
 	{
 		presets: [
-			presetUno(),
+			presetUno({
+				important: '#__nuxt',
+			}),
 			presetAttributify(),
 			presetWebFonts({
 				provider: "none",
