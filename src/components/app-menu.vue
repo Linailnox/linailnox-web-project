@@ -11,10 +11,10 @@
 					border-none
 					bg-transparent
 				>
-					<template v-for="item in route.options.routes" :key="item.path">
+					<template v-for="item in $router.options.routes" :key="item.path">
 						<el-menu-item
 							:index="item.path"
-							:class="route.path === item.path ? 'is-active' : ''"
+							:class="$router.path === item.path ? 'is-active' : ''"
 							>{{ $t("router." + item.name) }}</el-menu-item
 						>
 						<div v-if="item.name === '/'" grow />
@@ -38,7 +38,6 @@
 <script setup type="ts">
 import dark from "@/assets/icons/dark.vue";
 import light from "@/assets/icons/light.vue";
-const route = useRoute()
 const darkMode = useDark({ disableTransition: false });  // the default value is true
 const isDark = computed(() => darkMode.value);
 const toggleDark = useToggle(darkMode);

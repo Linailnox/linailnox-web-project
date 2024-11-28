@@ -9,7 +9,9 @@
 			</el-space>
 		</el-col>
 		<el-col :span="5.5">
-			<el-avatar :size="300" fit="cover" src="@/assets/avatar" />
+			<el-avatar :size="300" fit="cover">
+				<NuxtImg src="@/assets/avatar.jpg" />
+			</el-avatar>
 		</el-col>
 	</el-row>
 </template>

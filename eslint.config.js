@@ -8,6 +8,7 @@ export default withNuxt(
 	{
 		rules: {
 			semi: 0,
+			"vue/multi-word-component-names": "off",
 		},
 	},
 	unocss

@@ -1,0 +1,17 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 0d25a0feb53b9ca8d264d26610f6534a95d5226a..5a98105fa7707f56619d87448a99d2900a64e6f7 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -2919,8 +2919,10 @@ function vuePlugin(rawOptions = {}) {
+       };
+     },
+     configResolved(config) {
+-      options.value = {
+-        ...options.value,
++	  const { compiler, ...rest } = options.value
++      options.value = {
++	    compiler: compiler ?? resolveCompiler(options.value.root),
++        ...rest,
+         root: config.root,
+         sourceMap: config.command === "build" ? !!config.build.sourcemap : true,
+         cssDevSourcemap: config.css?.devSourcemap ?? false,
