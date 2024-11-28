@@ -48,5 +48,5 @@
 			"@nuxtjs/i18n@9.1.0": "src/patches/@nuxtjs__i18n@9.1.0.patch"
 		}
 	},
-	"packageManager": "pnpm@9"
+	"packageManager": "pnpm@^9"
 }
