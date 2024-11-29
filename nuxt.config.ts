@@ -46,24 +46,12 @@ export default defineNuxtConfig({
 	app: {
 		// head
 		head: {
-			title: "Element Plus + Nuxt 3",
-			meta: [
-				{ name: "viewport", content: "width=device-width, initial-scale=1" },
-				{
-					hid: "description",
-					name: "description",
-					content: "ElementPlus + Nuxt3",
-				},
-			],
+			title: "Linailnox",
 			link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 		},
 	},
 	colorMode: {
 		classSuffix: "",
-	},
-
-	turboConsole: {
-		specifiedEditor: "idea",
 	},
 	compatibilityDate: "2024-11-27",
 })
