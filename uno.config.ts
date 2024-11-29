@@ -6,7 +6,7 @@ export default mergeConfigs([
 	{
 		presets: [
 			presetUno({
-				important: '#__nuxt',
+				important: "#__nuxt",
 			}),
 			presetAttributify(),
 			presetWebFonts({

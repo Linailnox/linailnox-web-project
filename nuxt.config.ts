@@ -16,6 +16,15 @@ export default defineNuxtConfig({
 	],
 
 	srcDir: "src/",
+	vite: {
+		css: {
+			preprocessorOptions: {
+				scss: {
+					api: 'modern-compiler',
+				},
+			}
+		}
+	},
 	vueuse: {
 		ssrHandlers: true,
 	},
@@ -26,34 +35,31 @@ export default defineNuxtConfig({
 		nuxtLayers: true,
 	},
 	elementPlus: {
-		icon: 'ElIcon',
-		importStyle: 'scss',
-		themes: ['dark'],
+		icon: "ElIcon",
+		importStyle: "scss",
+		themes: ["dark"],
 	},
 	i18n: {
 		vueI18n: "./i18n.config.ts",
 	},
-	css: [
-		'@unocss/reset/tailwind.css',
-		'@/assets/scss/index.scss'
-	],
+	css: ["@unocss/reset/tailwind.css", "@/assets/scss/index.scss"],
 	app: {
 		// head
 		head: {
-			title: 'Element Plus + Nuxt 3',
+			title: "Element Plus + Nuxt 3",
 			meta: [
-				{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+				{ name: "viewport", content: "width=device-width, initial-scale=1" },
 				{
-					hid: 'description',
-					name: 'description',
-					content: 'ElementPlus + Nuxt3',
+					hid: "description",
+					name: "description",
+					content: "ElementPlus + Nuxt3",
 				},
 			],
-			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-		}
+			link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+		},
 	},
 	colorMode: {
-		classSuffix: '',
+		classSuffix: "",
 	},
 
 	turboConsole: {
