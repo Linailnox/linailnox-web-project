@@ -42,7 +42,7 @@
 		"unocss": "^0.64.1",
 		"unplugin-icons": "^0.18.5",
 		"unplugin-turbo-console": "^1.10.4",
-		"vue-tsc": "^2.1.10"
+		"vue-tsc": "^2.2.0"
 	},
 	"pnpm": {
 		"patchedDependencies": {
